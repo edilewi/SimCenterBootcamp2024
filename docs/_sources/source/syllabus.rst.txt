@@ -107,15 +107,13 @@ Introduction to C/C++/HPC - July 31 - Aug 2, 2024, 2.5 days
   * Assign Homework C #1
     
 
-* Session 2: 
-
-* Day 2: `Pointers, Memory & Files <https://github.com/NHERI-SimCenter/SimCenterBootcamp2024/blob/master/Presentations/C-Session2.pdf>`_
+* Session 2: `Pointers, Memory & Files <https://github.com/NHERI-SimCenter/SimCenterBootcamp2024/blob/master/Presentations/C-Session2.pdf>`_
   
   * C: Pointers Review
   * C: Memory Allocation
   * C: File I/O
 
-* Session 3:
+* * Session 3: `Datatypes & Abstraction <https://github.com/NHERI-SimCenter/SimCenterBootcamp2024/blob/master/Presentations/C-Session3.pdf>`_
   
   * C: User Defined Datatypes
   * C: Data Abstraction    
