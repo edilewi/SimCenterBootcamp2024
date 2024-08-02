@@ -119,7 +119,7 @@ Introduction to C/C++/HPC - July 31 - Aug 2, 2024, 2.5 days
   * C: Data Abstraction    
 
 
-* Session 4:
+* Session 4: `Object Oriented Programming & C++ <https://github.com/NHERI-SimCenter/SimCenterBootcamp2024/blob/master/Presentations/C-Session4.pdf>`_
 
   * Object Oriented Programming
   * C++
