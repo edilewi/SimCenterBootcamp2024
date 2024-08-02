@@ -1,0 +1,15 @@
+1. Have CMakeLists
+2. do this process of commands
+	mkdir build
+	cd build
+	cmake ..
+	cmake --build .
+3. Put the files to compile in the build folder
+4. Run the following command
+	cmake -- build .
+5. Repeat 3 and 4 as needed
+6. Move executable out of build folder into main folder
+7. May delete build folder at this point
+8. Repeat 1-7 if need to update any files
+9. Run executable
+	./executableName

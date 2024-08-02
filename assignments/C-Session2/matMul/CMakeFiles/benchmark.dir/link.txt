@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/benchmark.dir/benchmark.cpp.o CMakeFiles/benchmark.dir/myDGEMM.c.o CMakeFiles/benchmark.dir/blasDGEMM.c.o -o benchmark  -lm -lopenblas 

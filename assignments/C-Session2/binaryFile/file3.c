@@ -31,8 +31,30 @@ int main(int argc, char **argv) {
     printf("%d, %f, %f\n",i, vector2[i], vector1[i]);
     vectorSize++;
 
+    // when this happens we need to increase the vector size we have
     if (vectorSize == maxVectorSize) {
       // some code needed here I think .. programming exercise
+      // malloc larger spaces
+      double *vector1New = (double *)malloc((vectorSize+maxVectorSize)*sizeof(double));
+      double *vector2New = (double *)malloc((vectorSize+maxVectorSize)*sizeof(double));
+
+      //copy original
+      for(int i = 0; i<vectorSize; i++){
+	vector1New[i] = vector1[i];
+	vector2New[i] = vector2[i];
+      }
+
+      //free original
+      free(vector1);
+      free(vector2);
+      vector1 = vector1New;
+      vector2 = vector2New;
+
+      //if we free vector1New, we release vector that vector1
+      //now points to which is a mistake
+
+      //change max Vector size
+      maxVectorSize += vectorSize;
     }
   }
   
@@ -45,6 +67,9 @@ int main(int argc, char **argv) {
   FILE *filePtrB = fopen(argv[2],"wb");
   
   // some missing code to write vector1, followed by vector 2
+
+  fwrite(vector1,sizeof(double), vectorSize, filePtrB);
+  fwrite(vector2,sizeof(double), vectorSize, filePtrB);
   
   fclose(filePtrB);  
 }

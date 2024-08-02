@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/matMul.dir/matMul.c.o CMakeFiles/matMul.dir/myDGEMM.c.o CMakeFiles/matMul.dir/blasDGEMM.c.o -o matMul  -lm -lopenblas 
